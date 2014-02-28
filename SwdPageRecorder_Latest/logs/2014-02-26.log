@@ -1,0 +1,78 @@
+2014-02-26 17:20:21.5504 INFO PerformSlowOperation: Started for operation: Operation: Start new WebDriver instance
+2014-02-26 17:20:59.7320 INFO PerformSlowOperation: Finished for operation: Operation: Start new WebDriver instance
+2014-02-26 17:20:59.7320 INFO PerformSlowOperation: Operation result: successful :)
+2014-02-26 17:24:25.3236 INFO InjectVisualSearch: Started
+2014-02-26 17:24:26.4273 INFO |-> InjectJSON2ObjectForWierdBrowsers(): Started
+2014-02-26 17:24:26.4538 INFO |-> InjectJSON2ObjectForWierdBrowsers(): All fine :D. We are working with a modern browser/mode ^_^
+2014-02-26 17:24:26.4538 INFO |-> InjectJSON2ObjectForWierdBrowsers(): Finished
+2014-02-26 17:24:26.4538 INFO InjectVisualSearch: Was not injected. Perform Inject
+2014-02-26 17:24:26.4928 INFO InjectVisualSearch: Finished
+2014-02-26 17:24:26.4928 INFO VisualSearch_UpdateSearchResult: Started
+2014-02-26 17:24:56.6334 INFO JSON:
+[
+{ "Key": "type", "Value": "text"},{ "Key": "name", "Value": "usr_email"},{ "Key": "autocomplete", "Value": "off"},{ "Key": "dojoattachpoint", "Value": "textbox,focusNode"},{ "Key": "class", "Value": "dijitReset"},{ "Key": "id", "Value": "dijit_form_ValidationTextBox_0"},{ "Key": "tabindex", "Value": "0"},{ "Key": "aria-required", "Value": "true"},{ "Key": "aria-invalid", "Value": "true"},{ "Key": "value", "Value": ""},]
+
+2014-02-26 17:25:03.2197 INFO JSON:
+[
+{ "Key": "type", "Value": "text"},{ "Key": "name", "Value": "usr_email"},{ "Key": "autocomplete", "Value": "off"},{ "Key": "dojoattachpoint", "Value": "textbox,focusNode"},{ "Key": "class", "Value": "dijitReset"},{ "Key": "id", "Value": "dijit_form_ValidationTextBox_0"},{ "Key": "tabindex", "Value": "0"},{ "Key": "aria-required", "Value": "true"},{ "Key": "aria-invalid", "Value": "true"},{ "Key": "value", "Value": ""},]
+
+2014-02-26 17:25:07.2320 INFO JSON:
+[
+{ "Key": "type", "Value": "text"},{ "Key": "name", "Value": "usr_email"},{ "Key": "autocomplete", "Value": "off"},{ "Key": "dojoattachpoint", "Value": "textbox,focusNode"},{ "Key": "class", "Value": "dijitReset"},{ "Key": "id", "Value": "dijit_form_ValidationTextBox_0"},{ "Key": "tabindex", "Value": "0"},{ "Key": "aria-required", "Value": "true"},{ "Key": "aria-invalid", "Value": "true"},{ "Key": "value", "Value": ""},]
+
+2014-02-26 17:25:08.0582 INFO JSON:
+[
+{ "Key": "type", "Value": "text"},{ "Key": "name", "Value": "usr_email"},{ "Key": "autocomplete", "Value": "off"},{ "Key": "dojoattachpoint", "Value": "textbox,focusNode"},{ "Key": "class", "Value": "dijitReset"},{ "Key": "id", "Value": "dijit_form_ValidationTextBox_0"},{ "Key": "tabindex", "Value": "0"},{ "Key": "aria-required", "Value": "true"},{ "Key": "aria-invalid", "Value": "true"},{ "Key": "value", "Value": ""},]
+
+2014-02-26 17:25:59.6560 INFO JSON:
+[
+{ "Key": "type", "Value": "text"},{ "Key": "name", "Value": "usr_email"},{ "Key": "autocomplete", "Value": "off"},{ "Key": "dojoattachpoint", "Value": "textbox,focusNode"},{ "Key": "class", "Value": "dijitReset"},{ "Key": "id", "Value": "dijit_form_ValidationTextBox_0"},{ "Key": "tabindex", "Value": "0"},{ "Key": "aria-required", "Value": "true"},{ "Key": "aria-invalid", "Value": "true"},{ "Key": "value", "Value": ""},]
+
+2014-02-26 17:26:12.3820 INFO JSON:
+[
+{ "Key": "type", "Value": "password"},{ "Key": "name", "Value": "usr_password"},{ "Key": "autocomplete", "Value": "off"},{ "Key": "dojoattachpoint", "Value": "textbox,focusNode"},{ "Key": "class", "Value": "dijitReset"},{ "Key": "id", "Value": "dijit_form_ValidationTextBox_1"},{ "Key": "tabindex", "Value": "0"},{ "Key": "aria-required", "Value": "true"},{ "Key": "aria-invalid", "Value": "true"},{ "Key": "value", "Value": ""},]
+
+2014-02-26 17:26:37.2450 INFO JSON:
+[
+{ "Key": "waistate", "Value": "labelledby-dijit_form_Button_0_label"},{ "Key": "wairole", "Value": "button"},{ "Key": "value", "Value": ""},{ "Key": "type", "Value": "submit"},{ "Key": "dojoattachpoint", "Value": "titleNode,focusNode"},{ "Key": "class", "Value": "dijitReset dijitStretch dijitButtonContents"},{ "Key": "role", "Value": "button"},{ "Key": "aria-labelledby", "Value": "dijit_form_Button_0_label"},{ "Key": "id", "Value": "dijit_form_Button_0"},{ "Key": "tabindex", "Value": "0"},{ "Key": "style", "Value": "-moz-user-select: none;"},]
+
+2014-02-26 17:29:08.9828 ERROR The given selector  is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression  because of the following error:
+[Exception... "The expression is not a legal expression."  code: "12" nsresult: "0x805b0033 (SyntaxError)"  location: "<unknown>"]
+2014-02-26 17:29:13.1962 ERROR The given selector  is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression  because of the following error:
+[Exception... "The expression is not a legal expression."  code: "12" nsresult: "0x805b0033 (SyntaxError)"  location: "<unknown>"]
+2014-02-26 17:31:20.6282 INFO VisualSearch_UpdateSearchResult: Found the Visual search is not injected. Injecting
+2014-02-26 17:31:20.6282 INFO InjectVisualSearch: Started
+2014-02-26 17:31:20.6282 INFO |-> InjectJSON2ObjectForWierdBrowsers(): Started
+2014-02-26 17:31:20.6282 INFO |-> InjectJSON2ObjectForWierdBrowsers(): All fine :D. We are working with a modern browser/mode ^_^
+2014-02-26 17:31:20.6282 INFO |-> InjectJSON2ObjectForWierdBrowsers(): Finished
+2014-02-26 17:31:20.6282 INFO InjectVisualSearch: Was not injected. Perform Inject
+2014-02-26 17:31:20.6582 INFO InjectVisualSearch: Finished
+2014-02-26 17:32:34.7940 ERROR Element not found in the cache - perhaps the page has changed since it was looked up
+2014-02-26 17:35:40.1576 INFO VisualSearch_UpdateSearchResult: Found the Visual search is not injected. Injecting
+2014-02-26 17:35:40.1576 INFO InjectVisualSearch: Started
+2014-02-26 17:35:40.1576 INFO |-> InjectJSON2ObjectForWierdBrowsers(): Started
+2014-02-26 17:35:40.1746 INFO |-> InjectJSON2ObjectForWierdBrowsers(): All fine :D. We are working with a modern browser/mode ^_^
+2014-02-26 17:35:40.1746 INFO |-> InjectJSON2ObjectForWierdBrowsers(): Finished
+2014-02-26 17:35:40.1746 INFO InjectVisualSearch: Was not injected. Perform Inject
+2014-02-26 17:35:40.1971 INFO InjectVisualSearch: Finished
+2014-02-26 17:35:42.0064 ERROR Element not found in the cache - perhaps the page has changed since it was looked up
+2014-02-26 17:40:06.3688 ERROR The given selector div.fieldRow:nth-child(1)  input[id*=TextBox] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression div.fieldRow:nth-child(1)  input[id*=TextBox] because of the following error:
+[Exception... "The expression is not a legal expression."  code: "12" nsresult: "0x805b0033 (SyntaxError)"  location: "<unknown>"]
+2014-02-26 17:40:09.8100 ERROR The given selector div.fieldRow:nth-child(1)  input[id*=TextBox] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression div.fieldRow:nth-child(1)  input[id*=TextBox] because of the following error:
+[Exception... "The expression is not a legal expression."  code: "12" nsresult: "0x805b0033 (SyntaxError)"  location: "<unknown>"]
+2014-02-26 17:46:56.2067 INFO VisualSearch_UpdateSearchResult: Found the Visual search is not injected. Injecting
+2014-02-26 17:46:56.2067 INFO InjectVisualSearch: Started
+2014-02-26 17:46:56.2067 INFO |-> InjectJSON2ObjectForWierdBrowsers(): Started
+2014-02-26 17:46:56.2217 INFO |-> InjectJSON2ObjectForWierdBrowsers(): All fine :D. We are working with a modern browser/mode ^_^
+2014-02-26 17:46:56.2217 INFO |-> InjectJSON2ObjectForWierdBrowsers(): Finished
+2014-02-26 17:46:56.2217 INFO InjectVisualSearch: Was not injected. Perform Inject
+2014-02-26 17:46:56.2387 INFO InjectVisualSearch: Finished
+2014-02-26 17:53:57.7000 INFO PerformSlowOperation: Started for operation: Operation: Stop WebDriver instance
+2014-02-26 17:53:59.2313 ERROR A exception with a null response was thrown sending an HTTP request to the remote WebDriver server for URL http://localhost:7055/hub/session/66b47639-29bf-4331-950e-449b4b0ecfc3/execute. The status of the exception was ReceiveFailure, and the message was: The underlying connection was closed: An unexpected error occurred on a receive.
+2014-02-26 17:54:00.0110 INFO VisualSearch_UpdateSearchResult: Finished
+2014-02-26 17:54:13.8152 INFO PerformSlowOperation: Finished for operation: Operation: Stop WebDriver instance
+2014-02-26 17:54:13.8152 INFO PerformSlowOperation: Operation result: successful :)
