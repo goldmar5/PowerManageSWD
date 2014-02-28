@@ -49,6 +49,8 @@ namespace Demo.TestModel.PageDeclarations
             VerifyElementVisible("txtLogin", txtLogin);
             VerifyElementVisible("txtPassword", txtPassword);
             VerifyElementVisible("buttonLogIn", buttonLogIn);
+
+            //comm
         }
     }
 }
