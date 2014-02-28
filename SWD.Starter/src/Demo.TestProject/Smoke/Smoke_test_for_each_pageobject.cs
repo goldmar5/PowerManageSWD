@@ -25,9 +25,9 @@ namespace Demo.TestProject.Smoke
         // *PageName*_VerifyExpectedElements()
         
         [TestMethod]
-        public void EmptyPage_VerifyExpectedElements()
+        public void ipmpLoginPage_VerifyExpectedElements()
         {
-            PageTest(MyPages.EmptyPage);
+            PageTest(MyPages.ipmpLoginPage);
         }
 
         [TestMethod]

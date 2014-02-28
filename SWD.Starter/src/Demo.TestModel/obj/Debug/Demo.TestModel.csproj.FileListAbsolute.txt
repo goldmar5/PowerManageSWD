@@ -7,3 +7,12 @@ d:\Projects_C#\SWD.Starter.C#\SWD.Starter\bin\Demo.TestModel.pdb
 d:\Projects_C#\SWD.Starter.C#\SWD.Starter\src\Demo.TestModel\obj\Debug\Demo.TestModel.csprojResolveAssemblyReference.cache
 d:\Projects_C#\SWD.Starter.C#\SWD.Starter\src\Demo.TestModel\obj\Debug\Demo.TestModel.dll
 d:\Projects_C#\SWD.Starter.C#\SWD.Starter\src\Demo.TestModel\obj\Debug\Demo.TestModel.pdb
+D:\Projects_C#\PowerManageSWD\PowerManageSWD\SWD.Starter\bin\chromedriver.exe
+D:\Projects_C#\PowerManageSWD\PowerManageSWD\SWD.Starter\bin\IEDriverServer.exe
+D:\Projects_C#\PowerManageSWD\PowerManageSWD\SWD.Starter\bin\Config.config
+D:\Projects_C#\PowerManageSWD\PowerManageSWD\SWD.Starter\bin\Demo.TestModel.dll.config
+D:\Projects_C#\PowerManageSWD\PowerManageSWD\SWD.Starter\bin\Demo.TestModel.dll
+D:\Projects_C#\PowerManageSWD\PowerManageSWD\SWD.Starter\bin\Demo.TestModel.pdb
+D:\Projects_C#\PowerManageSWD\PowerManageSWD\SWD.Starter\src\Demo.TestModel\obj\Debug\Demo.TestModel.csprojResolveAssemblyReference.cache
+D:\Projects_C#\PowerManageSWD\PowerManageSWD\SWD.Starter\src\Demo.TestModel\obj\Debug\Demo.TestModel.dll
+D:\Projects_C#\PowerManageSWD\PowerManageSWD\SWD.Starter\src\Demo.TestModel\obj\Debug\Demo.TestModel.pdb
