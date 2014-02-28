@@ -1,0 +1,9 @@
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\bin\chromedriver.exe
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\bin\IEDriverServer.exe
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\bin\Config.config
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\bin\Swd.Core.dll.config
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\bin\Swd.Core.dll
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\bin\Swd.Core.pdb
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\src\SWD.Core\obj\Debug\Swd.Core.csprojResolveAssemblyReference.cache
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\src\SWD.Core\obj\Debug\Swd.Core.dll
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\src\SWD.Core\obj\Debug\Swd.Core.pdb

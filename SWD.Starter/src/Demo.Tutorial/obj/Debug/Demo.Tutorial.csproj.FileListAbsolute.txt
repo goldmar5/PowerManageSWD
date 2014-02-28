@@ -1,0 +1,10 @@
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\bin\chromedriver.exe
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\bin\IEDriverServer.exe
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\bin\DemoPages\Ch_00_Introduction\simple.html
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\bin\Config.config
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\bin\Demo.Tutorial.dll.config
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\bin\Demo.Tutorial.dll
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\bin\Demo.Tutorial.pdb
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\src\Demo.Tutorial\obj\Debug\Demo.Tutorial.csprojResolveAssemblyReference.cache
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\src\Demo.Tutorial\obj\Debug\Demo.Tutorial.dll
+d:\Projects_C#\SWD.Starter.C#\SWD.Starter\src\Demo.Tutorial\obj\Debug\Demo.Tutorial.pdb
