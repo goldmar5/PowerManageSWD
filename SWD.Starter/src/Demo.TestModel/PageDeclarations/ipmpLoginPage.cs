@@ -30,6 +30,9 @@ namespace Demo.TestModel.PageDeclarations
         [FindsBy(How = How.XPath, Using = @"id(""dijit_form_Button_0"")")]
         protected IWebElement buttonLogIn { get; set; }
 
+        [FindsBy(How = How.CssSelector, Using = @"#loginform .link")]
+        protected IWebElement linkForgot { get; set; }
+
         #endregion
 
         #region Invoke() and IsDisplayed()
@@ -49,6 +52,7 @@ namespace Demo.TestModel.PageDeclarations
             VerifyElementVisible("txtLogin", txtLogin);
             VerifyElementVisible("txtPassword", txtPassword);
             VerifyElementVisible("buttonLogIn", buttonLogIn);
+            VerifyElementVisible("linkForgot", linkForgot);
         }
     }
 }
