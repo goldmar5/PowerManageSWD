@@ -53,5 +53,9 @@ namespace Demo.TestModel
 
         public static TycoPowerManagePage TycoPowerManagePage { get { return GetPage<TycoPowerManagePage>(); } }
 
+        public static LogoutMenuPage LogoutMenuPage { get { return GetPage<LogoutMenuPage>(); } }
+
+        
+
     }
 }

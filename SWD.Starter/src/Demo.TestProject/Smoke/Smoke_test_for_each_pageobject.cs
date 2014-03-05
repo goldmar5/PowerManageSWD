@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using Demo.TestModel;
 using Swd.Core.Pages;
+using Demo.TestModel.PageDeclarations;
 
 namespace Demo.TestProject.Smoke
 {
@@ -23,23 +24,30 @@ namespace Demo.TestProject.Smoke
         
         // Add testMethods for your new pages here:
         // *PageName*_VerifyExpectedElements()
-        
+
+        [TestMethod]
+        public void LogoutMenuPage_VerifyExpectedElements()
+        {
+            PageTest(MyPages.LogoutMenuPage);
+            MyPages.LogoutMenuPage.Logout();
+        }
+  
+        [TestMethod]
+        public void TycoPowerManagePage_VerifyExpectedElements()
+        {            
+            PageTest(MyPages.TycoPowerManagePage);
+        }        
+
         [TestMethod]
         public void ipmpLoginPage_VerifyExpectedElements()
         {
             PageTest(MyPages.ipmpLoginPage);
         }
 
-        [TestMethod]
-        public void TycoPowerManagePage_VerifyExpectedElements()
-        {
-            PageTest(MyPages.TycoPowerManagePage);
-        }
-
-        [TestMethod]
-        public void CreateNewAccountPage_VerifyExpectedElements()
-        {
-            PageTest(MyPages.CreateNewAccountPage);
-        }
+        //[TestMethod]
+        //public void CreateNewAccountPage_VerifyExpectedElements()
+        //{
+        //    PageTest(MyPages.CreateNewAccountPage);
+        //}
     }
 }

@@ -493,6 +493,27 @@
       <Arg2 />
       <Arg3 />
     </WebElementDefinition>
+    <WebElementDefinition>
+      <Name>imgWelcome</Name>
+      <HowToSearch>CssSelector</HowToSearch>
+      <Locator>.welcome</Locator>
+      <HtmlTag>div</HtmlTag>
+      <AlternativeFindBys />
+      <ReturnsCollection>false</ReturnsCollection>
+      <AllHtmlTagProperties>
+        <Item>
+          <Key>
+            <string>class</string>
+          </Key>
+          <Value>
+            <string>welcome</string>
+          </Value>
+        </Item>
+      </AllHtmlTagProperties>
+      <Arg1 />
+      <Arg2 />
+      <Arg3 />
+    </WebElementDefinition>
   </Items>
   <FrameDisplayName />
   <FrameInternalName />

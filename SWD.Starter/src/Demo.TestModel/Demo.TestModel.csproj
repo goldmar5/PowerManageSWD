@@ -55,6 +55,7 @@
     <Compile Include="PageDeclarations\EmptyPage.cs" />
     <Compile Include="PageDeclarations\DummyExamplePage.cs" />
     <Compile Include="PageDeclarations\ipmpLoginPage.cs" />
+    <Compile Include="PageDeclarations\LogoutMenuPage.cs" />
     <Compile Include="PageDeclarations\TycoPowerManagePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -53,6 +53,15 @@ namespace Demo.TestModel.PageDeclarations
             VerifyElementVisible("txtPassword", txtPassword);
             VerifyElementVisible("buttonLogIn", buttonLogIn);
             VerifyElementVisible("linkForgot", linkForgot);
+        }        
+
+        public TycoPowerManagePage Login()
+        {
+            MyPages.ipmpLoginPage.Invoke();
+            txtLogin.SendKeys("admin@visonic.com");
+            txtPassword.SendKeys("Admin123");
+            buttonLogIn.Click();
+            return new TycoPowerManagePage();
         }
     }
 }

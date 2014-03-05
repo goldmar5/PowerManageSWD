@@ -58,17 +58,26 @@ namespace Demo.TestModel.PageDeclarations
         [FindsBy(How = How.CssSelector, Using = @".help")]
         protected IWebElement linkHelp { get; set; }
 
+        [FindsBy(How = How.CssSelector, Using = @".welcome")]
+        protected IWebElement imgWelcome { get; set; }
+
+        [FindsBy(How = How.CssSelector, Using = @"#mainModalDialog")]
+        protected IWebElement mainModalDialog { get; set; }
+
         #endregion
 
         #region Invoke() and IsDisplayed()
         public override void Invoke()
         {
-            SwdBrowser.Driver.Url = @"http://212.90.164.242/index/index";
+            var LoginPage = new ipmpLoginPage();
+            var tycoPage = LoginPage.Login();
+            tycoPage.WaitLoadPage();
         }
 
         public override bool IsDisplayed()
         {
-            return SwdBrowser.Driver.Url.Contains(@"212.90.164");
+            //return SwdBrowser.Driver.Url.Contains(@"212.90.164");
+            return SwdBrowser.Driver.PageSource.Contains("class='welcome'");
         }
         #endregion
 
@@ -84,6 +93,19 @@ namespace Demo.TestModel.PageDeclarations
             VerifyElementVisible("linkSettings", linkSettings);
             VerifyElementVisible("linkLogout", linkLogout);
             VerifyElementVisible("linkHelp", linkHelp);
+            VerifyElementVisible("imgWelcome", imgWelcome);
+        }
+
+        public void WaitLoadPage()
+        {
+            Wait.UntilVisible(imgWelcome, 10000);
+            Wait.UntilDisapear(mainModalDialog, 15000);
+        }
+
+        public LogoutMenuPage Logout()
+        {
+            linkLogout.Click();
+            return new LogoutMenuPage();
         }
     }
 }
