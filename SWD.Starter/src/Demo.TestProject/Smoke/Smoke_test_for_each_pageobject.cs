@@ -31,6 +31,12 @@ namespace Demo.TestProject.Smoke
         }
 
         [TestMethod]
+        public void TycoPowerManagePage_VerifyExpectedElements()
+        {
+            PageTest(MyPages.TycoPowerManagePage);
+        }
+
+        [TestMethod]
         public void CreateNewAccountPage_VerifyExpectedElements()
         {
             PageTest(MyPages.CreateNewAccountPage);

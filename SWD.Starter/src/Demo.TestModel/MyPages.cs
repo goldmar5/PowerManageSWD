@@ -51,5 +51,7 @@ namespace Demo.TestModel
 
         public static ipmpLoginPage ipmpLoginPage { get { return GetPage<ipmpLoginPage>(); } }
 
+        public static TycoPowerManagePage TycoPowerManagePage { get { return GetPage<TycoPowerManagePage>(); } }
+
     }
 }
