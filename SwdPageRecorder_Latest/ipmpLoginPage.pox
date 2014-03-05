@@ -281,6 +281,43 @@
         </Item>
       </AllHtmlTagProperties>
     </WebElementDefinition>
+    <WebElementDefinition>
+      <Name>linkForgot</Name>
+      <HowToSearch>CssSelector</HowToSearch>
+      <Locator>#loginform .link</Locator>
+      <HtmlTag>a</HtmlTag>
+      <AlternativeFindBys />
+      <ReturnsCollection>false</ReturnsCollection>
+      <AllHtmlTagProperties>
+        <Item>
+          <Key>
+            <string>class</string>
+          </Key>
+          <Value>
+            <string>link</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>dojoattachpoint</string>
+          </Key>
+          <Value>
+            <string>tab</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>href</string>
+          </Key>
+          <Value>
+            <string>#</string>
+          </Value>
+        </Item>
+      </AllHtmlTagProperties>
+      <Arg1 />
+      <Arg2 />
+      <Arg3 />
+    </WebElementDefinition>
   </Items>
   <FrameDisplayName />
   <FrameInternalName />

@@ -1,1 +1,5 @@
 *.cache
+Demo.TestModel.dll
+Demo.TestModel.pdb
+Demo.TestProject.dll
+Demo.TestProject.pdb

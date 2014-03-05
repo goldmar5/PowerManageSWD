@@ -1,0 +1,500 @@
+<?xml version="1.0"?>
+<SwdPageObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PageObjectName>TycoPowerManagePage</PageObjectName>
+  <Version>2</Version>
+  <Items>
+    <WebElementDefinition>
+      <Name>tabPanels</Name>
+      <HowToSearch>CssSelector</HowToSearch>
+      <Locator>#menuItem_units_all a</Locator>
+      <HtmlTag>a</HtmlTag>
+      <AlternativeFindBys />
+      <ReturnsCollection>false</ReturnsCollection>
+      <AllHtmlTagProperties>
+        <Item>
+          <Key>
+            <string>onclick</string>
+          </Key>
+          <Value>
+            <string>app.main.navigation().ajaxLoadUrl('/units_all/list','content',true);</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>href</string>
+          </Key>
+          <Value>
+            <string>javascript:;</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>class</string>
+          </Key>
+          <Value>
+            <string />
+          </Value>
+        </Item>
+      </AllHtmlTagProperties>
+      <Arg1 />
+      <Arg2 />
+      <Arg3 />
+    </WebElementDefinition>
+    <WebElementDefinition>
+      <Name>tabGroups</Name>
+      <HowToSearch>CssSelector</HowToSearch>
+      <Locator>#menuItem_group a</Locator>
+      <HtmlTag>a</HtmlTag>
+      <AlternativeFindBys />
+      <ReturnsCollection>false</ReturnsCollection>
+      <AllHtmlTagProperties>
+        <Item>
+          <Key>
+            <string>onclick</string>
+          </Key>
+          <Value>
+            <string>app.main.navigation().ajaxLoadUrl('/group/list','content',true);</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>href</string>
+          </Key>
+          <Value>
+            <string>javascript:;</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>class</string>
+          </Key>
+          <Value>
+            <string />
+          </Value>
+        </Item>
+      </AllHtmlTagProperties>
+      <Arg1 />
+      <Arg2 />
+      <Arg3 />
+    </WebElementDefinition>
+    <WebElementDefinition>
+      <Name>tabEvents</Name>
+      <HowToSearch>CssSelector</HowToSearch>
+      <Locator>#menuItem_event a</Locator>
+      <HtmlTag>a</HtmlTag>
+      <AlternativeFindBys />
+      <ReturnsCollection>false</ReturnsCollection>
+      <AllHtmlTagProperties>
+        <Item>
+          <Key>
+            <string>onclick</string>
+          </Key>
+          <Value>
+            <string>app.main.navigation().ajaxLoadUrl('/event/list','content',true);</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>href</string>
+          </Key>
+          <Value>
+            <string>javascript:;</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>class</string>
+          </Key>
+          <Value>
+            <string />
+          </Value>
+        </Item>
+      </AllHtmlTagProperties>
+      <Arg1 />
+      <Arg2 />
+      <Arg3 />
+    </WebElementDefinition>
+    <WebElementDefinition>
+      <Name>tabProcesses</Name>
+      <HowToSearch>CssSelector</HowToSearch>
+      <Locator>#menuItem_process a</Locator>
+      <HtmlTag>a</HtmlTag>
+      <AlternativeFindBys />
+      <ReturnsCollection>false</ReturnsCollection>
+      <AllHtmlTagProperties>
+        <Item>
+          <Key>
+            <string>onclick</string>
+          </Key>
+          <Value>
+            <string>app.main.navigation().ajaxLoadUrl('/process/list','content',true);</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>href</string>
+          </Key>
+          <Value>
+            <string>javascript:;</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>class</string>
+          </Key>
+          <Value>
+            <string />
+          </Value>
+        </Item>
+      </AllHtmlTagProperties>
+      <Arg1 />
+      <Arg2 />
+      <Arg3 />
+    </WebElementDefinition>
+    <WebElementDefinition>
+      <Name>tabSystem</Name>
+      <HowToSearch>CssSelector</HowToSearch>
+      <Locator>#menuItem_system a</Locator>
+      <HtmlTag>a</HtmlTag>
+      <AlternativeFindBys />
+      <ReturnsCollection>false</ReturnsCollection>
+      <AllHtmlTagProperties>
+        <Item>
+          <Key>
+            <string>onclick</string>
+          </Key>
+          <Value>
+            <string>app.main.navigation().ajaxLoadUrl('/system/menu','content',true);</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>href</string>
+          </Key>
+          <Value>
+            <string>javascript:;</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>class</string>
+          </Key>
+          <Value>
+            <string />
+          </Value>
+        </Item>
+      </AllHtmlTagProperties>
+      <Arg1 />
+      <Arg2 />
+      <Arg3 />
+    </WebElementDefinition>
+    <WebElementDefinition>
+      <Name>textVersion</Name>
+      <HowToSearch>CssSelector</HowToSearch>
+      <Locator>.productVersion</Locator>
+      <HtmlTag>li</HtmlTag>
+      <AlternativeFindBys />
+      <ReturnsCollection>false</ReturnsCollection>
+      <AllHtmlTagProperties>
+        <Item>
+          <Key>
+            <string>class</string>
+          </Key>
+          <Value>
+            <string>productVersion</string>
+          </Value>
+        </Item>
+      </AllHtmlTagProperties>
+      <Arg1 />
+      <Arg2 />
+      <Arg3 />
+    </WebElementDefinition>
+    <WebElementDefinition>
+      <Name>textCurrentUser</Name>
+      <HowToSearch>CssSelector</HowToSearch>
+      <Locator>#userImploadName</Locator>
+      <HtmlTag>span</HtmlTag>
+      <AlternativeFindBys />
+      <ReturnsCollection>false</ReturnsCollection>
+      <AllHtmlTagProperties>
+        <Item>
+          <Key>
+            <string>id</string>
+          </Key>
+          <Value>
+            <string>userImploadName</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>class</string>
+          </Key>
+          <Value>
+            <string />
+          </Value>
+        </Item>
+      </AllHtmlTagProperties>
+      <Arg1 />
+      <Arg2 />
+      <Arg3 />
+    </WebElementDefinition>
+    <WebElementDefinition>
+      <Name>linkSettings</Name>
+      <HowToSearch>CssSelector</HowToSearch>
+      <Locator>#app_layout_AnimatedLink_0</Locator>
+      <HtmlTag>a</HtmlTag>
+      <AlternativeFindBys />
+      <ReturnsCollection>false</ReturnsCollection>
+      <AllHtmlTagProperties>
+        <Item>
+          <Key>
+            <string>style</string>
+          </Key>
+          <Value>
+            <string>margin-right: 0px; color: rgb(1, 88, 187);</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>label</string>
+          </Key>
+          <Value>
+            <string>Settings</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>dojotype</string>
+          </Key>
+          <Value>
+            <string>app.layout.AnimatedLink</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>action</string>
+          </Key>
+          <Value>
+            <string>app.main.navigation().ajaxLoadUrl('/settings/menu','content',true);</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>href</string>
+          </Key>
+          <Value>
+            <string>javascript:;</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>id</string>
+          </Key>
+          <Value>
+            <string>app_layout_AnimatedLink_0</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>widgetid</string>
+          </Key>
+          <Value>
+            <string>app_layout_AnimatedLink_0</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>defaultcolor</string>
+          </Key>
+          <Value>
+            <string>rgb(1, 88, 187)</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>blinkcolor</string>
+          </Key>
+          <Value>
+            <string>#99AECA</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>disabledcolor</string>
+          </Key>
+          <Value>
+            <string>#717475</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>class</string>
+          </Key>
+          <Value>
+            <string>dijit dijitInline activeLink</string>
+          </Value>
+        </Item>
+      </AllHtmlTagProperties>
+      <Arg1 />
+      <Arg2 />
+      <Arg3 />
+    </WebElementDefinition>
+    <WebElementDefinition>
+      <Name>linkLogout</Name>
+      <HowToSearch>CssSelector</HowToSearch>
+      <Locator>#app_layout_AnimatedLink_1</Locator>
+      <HtmlTag>a</HtmlTag>
+      <AlternativeFindBys />
+      <ReturnsCollection>false</ReturnsCollection>
+      <AllHtmlTagProperties>
+        <Item>
+          <Key>
+            <string>label</string>
+          </Key>
+          <Value>
+            <string>Logout</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>dojotype</string>
+          </Key>
+          <Value>
+            <string>app.layout.AnimatedLink</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>action</string>
+          </Key>
+          <Value>
+            <string>app.main.navigation().ajaxLoadUrl('/logout/menu','content',true);</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>href</string>
+          </Key>
+          <Value>
+            <string>javascript:;</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>id</string>
+          </Key>
+          <Value>
+            <string>app_layout_AnimatedLink_1</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>widgetid</string>
+          </Key>
+          <Value>
+            <string>app_layout_AnimatedLink_1</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>style</string>
+          </Key>
+          <Value>
+            <string>color: rgb(1, 88, 187);</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>defaultcolor</string>
+          </Key>
+          <Value>
+            <string>rgb(1, 88, 187)</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>blinkcolor</string>
+          </Key>
+          <Value>
+            <string>#99AECA</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>disabledcolor</string>
+          </Key>
+          <Value>
+            <string>#717475</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>class</string>
+          </Key>
+          <Value>
+            <string>dijit dijitInline activeLink</string>
+          </Value>
+        </Item>
+      </AllHtmlTagProperties>
+      <Arg1 />
+      <Arg2 />
+      <Arg3 />
+    </WebElementDefinition>
+    <WebElementDefinition>
+      <Name>linkHelp</Name>
+      <HowToSearch>CssSelector</HowToSearch>
+      <Locator>.help</Locator>
+      <HtmlTag>a</HtmlTag>
+      <AlternativeFindBys />
+      <ReturnsCollection>false</ReturnsCollection>
+      <AllHtmlTagProperties>
+        <Item>
+          <Key>
+            <string>class</string>
+          </Key>
+          <Value>
+            <string>help</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>title</string>
+          </Key>
+          <Value>
+            <string>Help</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>target</string>
+          </Key>
+          <Value>
+            <string>_blank</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>label</string>
+          </Key>
+          <Value>
+            <string>Help</string>
+          </Value>
+        </Item>
+        <Item>
+          <Key>
+            <string>href</string>
+          </Key>
+          <Value>
+            <string>http://www.visonic.com/help/powermanage/default.htm</string>
+          </Value>
+        </Item>
+      </AllHtmlTagProperties>
+      <Arg1 />
+      <Arg2 />
+      <Arg3 />
+    </WebElementDefinition>
+  </Items>
+  <FrameDisplayName />
+  <FrameInternalName />
+  <PageTitle />
+</SwdPageObject>
