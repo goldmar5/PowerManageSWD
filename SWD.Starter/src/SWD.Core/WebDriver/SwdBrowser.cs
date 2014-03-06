@@ -73,6 +73,7 @@ namespace Swd.Core.WebDriver
             if (_driver != null)
             {
                 _driver.Dispose();
+                _driver = null;
 
                 // Fire OnDriverClosed
                 if (OnDriverClosed != null)
