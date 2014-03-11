@@ -36,7 +36,7 @@ namespace Demo.Tutorial
          
             Have you seen the browser appeared? O_O
         */
-        [TestMethod]
+        //[TestMethod]
         public void S01_First_Step_Run_WebDriver_with_Firefox()
         {
 
@@ -118,7 +118,7 @@ namespace Demo.Tutorial
                       and choose "Run Tests"
         */
 
-        [TestMethod]
+        //[TestMethod]
         public void S10_Change_the_configuration_and_open_local_page_in_Chrome()
         {
             // Btw, the method Ch00_OpenHtmlFile, uses SwdBrowser.Driver inside

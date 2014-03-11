@@ -15,10 +15,11 @@ using OpenQA.Selenium;
 #endregion
 namespace Demo.TestModel.PageDeclarations
 {
-    public class TycoPowerManagePage : MyPageBase
+    public class UnitListPage : MyPageBase
     {
         #region WebElements
 
+        #region General Header WebElements
         [FindsBy(How = How.CssSelector, Using = @"#menuItem_units_all a")]
         protected IWebElement tabPanels { get; set; }
 
@@ -57,12 +58,55 @@ namespace Demo.TestModel.PageDeclarations
 
         [FindsBy(How = How.CssSelector, Using = @".help")]
         protected IWebElement linkHelp { get; set; }
+#endregion
 
-        [FindsBy(How = How.CssSelector, Using = @".welcome")]
-        protected IWebElement imgWelcome { get; set; }
+        #region Search and Filters, Caption
+
+        [FindsBy(How = How.CssSelector, Using = @".panel")]
+        protected IWebElement blockFilters { get; set; }
+
+
+        [FindsBy(How = How.CssSelector, Using = @".search")]
+        protected IWebElement blockSearch { get; set; }
+
+        [FindsBy(How = How.CssSelector, Using = @".caption")]
+        protected IWebElement textCaption { get; set; }
+
+        #endregion
+
+        #region mainModalDialog
 
         [FindsBy(How = How.CssSelector, Using = @"#mainModalDialog")]
         protected IWebElement mainModalDialog { get; set; }
+
+        #endregion
+
+        [FindsBy(How = How.CssSelector, Using = @".panelsSubmenu a:nth-child(1)")]
+        protected IWebElement btnAllPanels { get; set; }
+
+
+        [FindsBy(How = How.CssSelector, Using = @".panelsSubmenu a:nth-child(2)")]
+        protected IWebElement btnFaultsMonitoring { get; set; }
+
+
+        [FindsBy(How = How.CssSelector, Using = @".panelsSubmenu a:nth-child(3)")]
+        protected IWebElement btnSuspendedFaults { get; set; }
+
+
+        [FindsBy(How = How.CssSelector, Using = @".panelsSubmenu a:nth-child(4)")]
+        protected IWebElement btnRemoteInspection { get; set; }
+
+
+        [FindsBy(How = How.CssSelector, Using = @".add")]
+        protected IWebElement btnAddUnit { get; set; }
+
+
+        [FindsBy(How = How.CssSelector, Using = @"[id$=RemoveBusyButton]")]
+        protected IWebElement btnRemoveUnit { get; set; }
+
+
+        [FindsBy(How = How.CssSelector, Using = @"div.section + span")]
+        protected IWebElement ddbActions { get; set; }
 
         #endregion
 
@@ -72,11 +116,14 @@ namespace Demo.TestModel.PageDeclarations
             var LoginPage = new ipmpLoginPage();
             var tycoPage = LoginPage.Login();
             tycoPage.WaitLoadPage();
+            var PanelsPage = tycoPage.Panels();
+            PanelsPage.WaitLoadPage();
         }
 
         public override bool IsDisplayed()
         {
-            return SwdBrowser.Driver.PageSource.Contains("class='welcome'");
+            throw new NotImplementedException();
+            return true;
         }
         #endregion
 
@@ -94,49 +141,24 @@ namespace Demo.TestModel.PageDeclarations
             VerifyElementVisible("linkLogout", linkLogout);
             VerifyElementVisible("linkHelp", linkHelp);
             #endregion
-            VerifyElementVisible("imgWelcome", imgWelcome);
+            #region Search and Filters, Caption locators
+            VerifyElementVisible("blockFilters", blockFilters);
+            VerifyElementVisible("blockSearch", blockSearch);
+            VerifyElementVisible("textCaption", textCaption);
+            #endregion
+            VerifyElementVisible("btnAllPanels", btnAllPanels);
+            VerifyElementVisible("btnFaultsMonitoring", btnFaultsMonitoring);
+            VerifyElementVisible("btnSuspendedFaults", btnSuspendedFaults);
+            VerifyElementVisible("btnRemoteInspection", btnRemoteInspection);
+            VerifyElementVisible("btnAddUnit", btnAddUnit);
+            VerifyElementVisible("btnRemoveUnit", btnRemoveUnit);
+            VerifyElementVisible("ddbActions", ddbActions);            
         }
 
         public void WaitLoadPage()
         {
-            Wait.UntilVisible(imgWelcome, 10000);
+            Wait.UntilVisible(textCaption, 10000);
             Wait.UntilDisapear(mainModalDialog, 15000);
-        }
-
-        public UnitListPage Panels()
-        {
-            tabPanels.Click();
-            return new UnitListPage();
-        }
-
-        public GroupPage Groups()
-        {
-            tabGroups.Click();
-            return new GroupPage();
-        }
-
-        public EventsPage Events()
-        {
-            tabEvents.Click();
-            return new EventsPage();
-        }
-
-        public ProcessesPage Processes()
-        {
-            tabProcesses.Click();
-            return new ProcessesPage();
-        }
-
-        public SystemPage System()
-        {
-            tabSystem.Click();
-            return new SystemPage();
-        }
-
-        public LogoutMenuPage Logout()
-        {
-            linkLogout.Click();
-            return new LogoutMenuPage();
         }
     }
 }

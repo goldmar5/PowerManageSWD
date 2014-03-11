@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Demo.TestModel.PageDeclarations;
 
 namespace Demo.TestProject
 {
@@ -7,9 +8,9 @@ namespace Demo.TestProject
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void LoginExample()
         {
-            var LoginPage = new Demo.TestModel.PageDeclarations.ipmpLoginPage();
+            var LoginPage = new ipmpLoginPage();
             LoginPage.Login();
         }
     }

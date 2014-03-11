@@ -47,13 +47,17 @@ namespace Demo.TestModel
         // Put your new pages here: 
         //=======================================================================================
 
-        public static CreateNewAccountPage CreateNewAccountPage { get { return GetPage<CreateNewAccountPage>(); } }
 
-        public static ipmpLoginPage ipmpLoginPage { get { return GetPage<ipmpLoginPage>(); } }
-
-        public static TycoPowerManagePage TycoPowerManagePage { get { return GetPage<TycoPowerManagePage>(); } }
+        //public static CreateNewAccountPage CreateNewAccountPage { get { return GetPage<CreateNewAccountPage>(); } }
 
         public static LogoutMenuPage LogoutMenuPage { get { return GetPage<LogoutMenuPage>(); } }
+        public static TycoPowerManagePage TycoPowerManagePage { get { return GetPage<TycoPowerManagePage>(); } }
+        public static ipmpLoginPage ipmpLoginPage { get { return GetPage<ipmpLoginPage>(); } }
+        public static UnitListPage UnitListPage { get { return GetPage<UnitListPage>(); } }
+        public static GroupPage GroupPage { get { return GetPage<GroupPage>(); } }
+        public static EventsPage EventsPage { get { return GetPage<EventsPage>(); } }
+        public static ProcessesPage ProcessesPage { get { return GetPage<ProcessesPage>(); } }
+        public static SystemPage SystemPage { get { return GetPage<SystemPage>(); } }
 
         
 

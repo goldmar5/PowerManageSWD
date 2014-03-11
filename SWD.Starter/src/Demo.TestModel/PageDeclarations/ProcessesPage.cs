@@ -15,10 +15,11 @@ using OpenQA.Selenium;
 #endregion
 namespace Demo.TestModel.PageDeclarations
 {
-    public class TycoPowerManagePage : MyPageBase
+    public class ProcessesPage : MyPageBase
     {
         #region WebElements
 
+        #region General Header WebElements
         [FindsBy(How = How.CssSelector, Using = @"#menuItem_units_all a")]
         protected IWebElement tabPanels { get; set; }
 
@@ -57,12 +58,28 @@ namespace Demo.TestModel.PageDeclarations
 
         [FindsBy(How = How.CssSelector, Using = @".help")]
         protected IWebElement linkHelp { get; set; }
+        #endregion
 
-        [FindsBy(How = How.CssSelector, Using = @".welcome")]
-        protected IWebElement imgWelcome { get; set; }
+        #region Search and Filters
+
+        [FindsBy(How = How.CssSelector, Using = @".panel")]
+        protected IWebElement blockFilters { get; set; }
+
+
+        [FindsBy(How = How.CssSelector, Using = @".search")]
+        protected IWebElement blockSearch { get; set; }
+
+        #endregion
+
+        #region Caption and mainModalDialog
 
         [FindsBy(How = How.CssSelector, Using = @"#mainModalDialog")]
         protected IWebElement mainModalDialog { get; set; }
+
+        [FindsBy(How = How.CssSelector, Using = @".caption")]
+        protected IWebElement textCaption { get; set; }
+
+        #endregion
 
         #endregion
 
@@ -72,11 +89,14 @@ namespace Demo.TestModel.PageDeclarations
             var LoginPage = new ipmpLoginPage();
             var tycoPage = LoginPage.Login();
             tycoPage.WaitLoadPage();
+            var ProcessesPage = tycoPage.Processes();
+            ProcessesPage.WaitLoadPage();
         }
 
         public override bool IsDisplayed()
         {
-            return SwdBrowser.Driver.PageSource.Contains("class='welcome'");
+            throw new NotImplementedException();
+            return true;
         }
         #endregion
 
@@ -94,49 +114,21 @@ namespace Demo.TestModel.PageDeclarations
             VerifyElementVisible("linkLogout", linkLogout);
             VerifyElementVisible("linkHelp", linkHelp);
             #endregion
-            VerifyElementVisible("imgWelcome", imgWelcome);
+
+            #region Search and Filters
+            VerifyElementVisible("blockFilters", blockFilters);
+            VerifyElementVisible("blockSearch", blockSearch);
+            #endregion
+
+            #region Caption locator
+            VerifyElementVisible("textCaption", textCaption);
+            #endregion
         }
 
         public void WaitLoadPage()
         {
-            Wait.UntilVisible(imgWelcome, 10000);
+            Wait.UntilVisible(textCaption, 10000);
             Wait.UntilDisapear(mainModalDialog, 15000);
-        }
-
-        public UnitListPage Panels()
-        {
-            tabPanels.Click();
-            return new UnitListPage();
-        }
-
-        public GroupPage Groups()
-        {
-            tabGroups.Click();
-            return new GroupPage();
-        }
-
-        public EventsPage Events()
-        {
-            tabEvents.Click();
-            return new EventsPage();
-        }
-
-        public ProcessesPage Processes()
-        {
-            tabProcesses.Click();
-            return new ProcessesPage();
-        }
-
-        public SystemPage System()
-        {
-            tabSystem.Click();
-            return new SystemPage();
-        }
-
-        public LogoutMenuPage Logout()
-        {
-            linkLogout.Click();
-            return new LogoutMenuPage();
         }
     }
 }

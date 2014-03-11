@@ -8,6 +8,7 @@ using System.Text;
 using Swd.Core;
 using Swd.Core.Pages;
 using Swd.Core.WebDriver;
+using Swd.Core.Configuration;
 #endregion
 #region Usings - WebDriver
 using OpenQA.Selenium.Support.PageObjects;
@@ -38,7 +39,7 @@ namespace Demo.TestModel.PageDeclarations
         #region Invoke() and IsDisplayed()
         public override void Invoke()
         {
-            SwdBrowser.Driver.Url = @"http://212.90.164.242";
+            SwdBrowser.Driver.Url = Config.applicationMainUrl;
         }
 
         public override bool IsDisplayed()
